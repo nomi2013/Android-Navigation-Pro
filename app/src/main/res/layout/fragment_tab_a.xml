@@ -3,23 +3,24 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".fragment.SampleAFragment">
+  tools:context=".TabAFragment"
+  android:id="@+id/navigation_home">
 
   <!-- TODO: Update blank fragment layout -->
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="You are in Sample fragment A"
+    android:text="Tab a Fragment"
     android:layout_gravity="center"
-    android:textSize="25sp"
-    />
+    android:textSize="24sp"/>
 
   <Button
-    android:id="@+id/btn"
+    android:id="@+id/btnList"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Go Next"
+    android:textSize="18sp"
     android:layout_gravity="center"
+    android:text="Go to List Items "
     android:layout_marginTop="50dp"/>
 
 </FrameLayout>

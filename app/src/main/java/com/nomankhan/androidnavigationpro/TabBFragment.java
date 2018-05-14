@@ -14,10 +14,10 @@ import androidx.navigation.Navigation;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SampleAFragment extends Fragment {
+public class TabBFragment extends Fragment {
 
 
-    public SampleAFragment() {
+    public TabBFragment() {
         // Required empty public constructor
     }
 
@@ -26,17 +26,18 @@ public class SampleAFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sample_a, container, false);
+        return inflater.inflate(R.layout.fragment_tab_b, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        getView().findViewById(R.id.btn).setOnClickListener(new OnClickListener() {
+        getView().findViewById(R.id.btnList).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_sampleAFragment_to_sampleBFragment);            }
+
+            }
         });
     }
 }

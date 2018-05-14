@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  app:startDestination="@id/navigation_home">
+
+  <fragment
+    android:id="@+id/navigation_home"
+    android:name="com.nomankhan.androidnavigationpro.TabAFragment"
+    android:label="fragment_tab_a"
+    tools:layout="@layout/fragment_tab_a">
+    <action
+      android:id="@+id/action_navigation_home_to_tabAListItemFragment"
+      app:destination="@id/tabAListItemFragment" />
+  </fragment>
+
+
+
+  <fragment
+    android:id="@+id/navigation_dashboard"
+    android:name="com.nomankhan.androidnavigationpro.TabBFragment"
+    android:label="fragment_tab_a"
+    tools:layout="@layout/fragment_tab_b" />
+
+  <fragment
+    android:id="@+id/tabAListItemFragment"
+    android:name="com.nomankhan.androidnavigationpro.TabAListItemFragment"
+    android:label="TabAListItemFragment"
+    tools:layout="@layout/fragment_tab_a_list_item">
+    <action
+      android:id="@+id/action_tabAListItemFragment_to_tabADetailsFragment"
+      app:destination="@id/tabADetailsFragment" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/tabADetailsFragment"
+    android:name="com.nomankhan.androidnavigationpro.TabADetailsFragment"
+    android:label="fragment_tab_adetails"
+    tools:layout="@layout/fragment_tab_adetails" />
+</navigation>

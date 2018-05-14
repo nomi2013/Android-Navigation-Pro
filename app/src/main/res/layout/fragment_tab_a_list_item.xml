@@ -3,23 +3,22 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".fragment.SampleAFragment">
+  tools:context=".TabBFragment">
 
   <!-- TODO: Update blank fragment layout -->
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="You are in Sample fragment A"
+    android:text="Tab a list Fragment"
     android:layout_gravity="center"
-    android:textSize="25sp"
-    />
+    android:textSize="24sp"/>
 
   <Button
-    android:id="@+id/btn"
+    android:id="@+id/btnDetails"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Go Next"
+    android:textSize="18sp"
     android:layout_gravity="center"
+    android:text="Go to Details "
     android:layout_marginTop="50dp"/>
-
 </FrameLayout>
